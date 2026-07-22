@@ -5,7 +5,7 @@
   
   .row::after { /* ::AFTER insere algum conteúdo após o conteúdo do elemento especificado */ 
     content: ""; /* conteudo vazio */
-    clear: both; /* Impede que os elementos com float saiam da linha */
+    clear: both; /* Limpa o efeito do float */
     display: block; /* Define o elemento como um bloco, ocupando toda a largura disponível */
   }
   
@@ -68,10 +68,10 @@
   
   /* RESPONSIVIDADE: comportamento do layout em diferentes tamanhos de tela */
   [class*="col-"] {
-      width: 100%;
+      width: 100%; /* celular todas as colunas ocupam 100% da largura */
     }
   
-    /* define tamanho da tela */
+    /* define tamanho da tela - regras para telas com largura mínima de 600px */
     @media only screen and (min-width: 600px) {
       /*largura das colunas em porcentagem para telas maiores que 600px */
       .col-s-1 {width: 8.33%;}
@@ -89,6 +89,7 @@
     }
       
      /* desktop */
+     /* regras para telas com largura mínima de 600px */ 
     @media only screen and (min-width: 768px) {
       /*largura das colunas em porcentagem para telas maiores que 768px */
       .col-1 {width: 8.33%;}
