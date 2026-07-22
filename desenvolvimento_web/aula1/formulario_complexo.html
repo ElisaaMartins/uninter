@@ -7,88 +7,92 @@
     <title>Formulário</title>
 </head>
 <body>
-    <form action="enviar.php" method="POST">
+    <!-- ACTION o que vai fazer e METHOD o método de envio | conexão com o servidor e arquivos de back -->
+    <form action="enviar.php" method="POST"> 
 
-        <fieldset>FORMULÁRIO Types
+      <fieldset>FORMULÁRIO Types <!-- agrupa campos do formulário com titulo-->
+
         </br>
         </br>
+
         <label for="nome"> Nome: </label>
-        <input type="text" name="nome" value="Digite seu nome" size="50" maxlength="50">
+        <input type="text" name="nome" value="Digite seu nome" size="50" maxlength="50"> <!-- VALUE: valor padrão do campo o que aparece antes do usuário digitar -->
         </br>
                           
         <label for="senha"> Senha: </label>
-         <input type="password" name="senha"  value="" size="20"  maxlength="8">
-         </br>
+        <input type="password" name="senha"  value="" size="20"  maxlength="8">
+        </br>
               
-         
-         
-         <fieldset>
-         <label for="linguagem">Linguagem que tem Interesse</label>
-         </br>
-         </br>
-         <input type="checkbox" name="linguagem[]" value="cbuilder"> C++
-         
-         <input type="checkbox" name="linguagem[]" value="php"  checked >PHP
+
+        <fieldset>
+        <label for="linguagem">Linguagem que tem Interesse</label>
+        </br>
+        </br>
         
-         <input type="checkbox" name="linguagem[]"  value="delphi">Delphi</br></br>
-         
-         </fieldset>
+        <!-- CHECKBOX são caixas de seleção -->
+        <input type="checkbox" name="linguagem[]" value="cbuilder"> C++
+        <input type="checkbox" name="linguagem[]" value="php"  checked >PHP
+        <input type="checkbox" name="linguagem[]"  value="delphi">Delphi</br></br>
+
+      </fieldset>
          
                  
         
-         <fieldset>
+      <fieldset>
          <label for="linguagemescolhida">Linguagem que irá cursar agora</label>
          </br>
          </br>
-         <!--comentário -->
+         
+         <!--RADIO são botões de opção -->
          <input type="radio" name="curso" value="cbuilder">C++
-         
          <input type="radio" name="curso" value="php" checked >PHP
-         
          <input type="radio" name="curso" value="delphi">Delphi</br></br>
          
-         </fieldset>
+      </fieldset>
           
           
          
-          <fieldset>
-            <label for="curso">Cursos que já fez na Escola</label>
-            </br>
-            </br>
-           <select name="escola">
-           <option value="bcb">C++Builder</option>
-           <option selected value="php">PHP</option>
-           <option value="delphi">Delphi</option>
-           </select>
+      <fieldset>
+        <label for="curso">Cursos que já fez na Escola</label>
+        </br>
+        </br>
+        <!-- SELECT cria uma lista de opções -->
+        <select name="escola">
+          <option value="bcb">C++Builder</option>
+          <option selected value="php">PHP</option>
+          <option value="delphi">Delphi</option>
+        </select>
              
-            </fieldset>
+      </fieldset>
         
-          </br>
-          
+      </br>
                       
-          <fieldset>
-          <label for="linguagemdomina">Linguagem que já domina</label>
-          </br>
-          </br>
-         <select name="D1" size = "10" multiple>
-         <option value="bcb">C++Builder</option>
-         <option selected value="php">PHP</option>
-         <option value="delphi">Delphi</option>
-         </select>
-         </fieldset>
+      <fieldset>
+        <label for="linguagemdomina">Linguagem que já domina</label>
+        </br>
+        </br>
+        <select name="D1" size = "10" multiple> <!-- MULTIPLE permite selecionar várias opções e SIZE define o número de linhas visíveis -->
+          <option value="bcb">C++Builder</option>
+          <option selected value="php">PHP</option>
+          <option value="delphi">Delphi</option>
+        </select>
+      </fieldset>
                 
            
-         <label for="mensagem">Mensagem:</label>
-         </br>
-         </br>
-           <textarea name="opiniao" rows="5" cols="40">Digite aqui sua msg...</textarea>
+      <label for="mensagem">Mensagem:</label>
+      </br>
+      </br>
+      <textarea name="opiniao" rows="5" cols="40">Digite aqui sua msg...</textarea>
           
-         </br>
-         </br>
-         
-         <input name="Submit" type="submit" id="Submit" value="Enviar">
-         </fieldset>
-         </form>
+      </br>
+      </br>
+      
+      <!-- Botão de envio -->
+      <!-- SUBMIT  é o que envia o formulário -->
+      <input name="Submit" type="submit" id="Submit" value="Enviar">
+
+      </fieldset>
+    </form>
          
          
 </body>
