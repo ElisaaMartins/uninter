@@ -1,0 +1,21 @@
+/* formatação para todos os elementos */
+*{ 
+	text-align: center;  /*alinhamento de texto*/
+        color:blue;
+}
+
+/* formatação para o elementos especificos (tags) */
+p{
+	text-align: justify;
+        color:red;
+}
+
+/* formatação para elementos com id específico */
+#p{
+        color:blueviolet;
+}
+
+/* formatação para elementos com classe específica */
+.p{
+        color: chartreuse;
+}

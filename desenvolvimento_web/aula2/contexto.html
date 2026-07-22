@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="contexto.css">  <!-- CSS link externo -->
+
+    <title>Paragrafos - CSS</title>
+    <!-- CSS interno -->
+    <style>
+        *{ 
+            text-align: center;
+            color:blue;
+        }
+        p{
+            text-align: justify;
+            color:red;
+        }
+        #p{
+            color:blueviolet;
+        }
+        .p{
+            color: chartreuse;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- também dá para fazer estilização inline - na propria tag -->
+    <h2 style="color: black;">Seletores</h2>
+
+    <!--lorem10 - tamanho 1o de texto | lorem gera texto aleatório de acordo com o tamanho -->
+    <p id="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, error.</p>
+    
+    <!--20 -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime exercitationem voluptate ipsum libero praesentium rerum laudantium omnis perferendis itaque vitae?</p>
+    <!--30 -->
+    <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere iusto pariatur aut rerum eos commodi vero assumenda aspernatur soluta, laborum sapiente labore impedit eum, perferendis maiores ipsam sequi blanditiis.</p>
+</body>
+</html>
