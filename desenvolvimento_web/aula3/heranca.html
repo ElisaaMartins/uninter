@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança</title>
+
+    <style>
+        /* tudo que estiver dentro da section vai ter as propriedades abaixo */
+        section{ 
+            color:crimson;
+        }
+
+        /* apenas elementos p que estiverem dentro do article vão ter as propriedades abaixo */
+        p:first-child {
+            font-size: x-large;
+        }
+
+        /* apenas o último elemento p que estiver dentro do article vai ter a propriedade abaixo */
+        p:last-child {
+            color: blue;
+        }
+
+        /* apenas o primeiro elemento p que estiver dentro do article vai ter a propriedade abaixo */
+        article :first-child{
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perspiciatis inventore, cumque facilis maxime dolorem deserunt accusamus ratione 
+            mollitia culpa nam atque eveniet natus quod libero! Inventore tempore ea illo.
+        </p>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <article>
+        <h2>Herança</h2>
+        <p>First paragraph...</p>
+        <p>Lorem ipsum...</p>
+        <p>Dolor sit amet...</p>
+        <p>Consectetur adipisicing...</p>
+    </article>
+</body>
+</html>
