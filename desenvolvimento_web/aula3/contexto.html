@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3</title>
+    <style>
+        /* redimensionamento de elementos */
+        .div1 {
+            width: 400px;
+            height: 200px;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+        .div2 {
+            width: 400px;
+            height: 200px;  
+            padding: 30px;
+            border: 1px solid blue;
+        }
+
+        /* variaveis */
+        :root { /* criação */
+          --dourado: #DEB44B;
+          --branco: #ffffff; 
+        }
+        
+        body {
+          background-color: var(--dourado); /* uso */ 
+        }
+        
+        h2 {
+          border-bottom: 2px solid var(--dourado);
+        }
+        
+        .container {
+          color: var(--dourado);
+          background-color: var(--branco);
+          padding: 15px;
+        }
+        
+        button {
+          background-color: var(--branco);
+          color: var(--dourado);
+          border: 1px solid var(--dourado);
+          padding: 5px;
+        }
+
+        img {
+            border-radius: 10px; /* arredondando as bordas da imagem */
+            opacity: 0.5; /* definindo a opacidade da imagem */
+            border-radius: 50%; /* definindo a borda da imagem */
+            display: block; 
+            margin: auto;
+        }
+
+        img:hover {
+            opacity: 0.5; /* definindo a opacidade da imagem quando o mouse estiver sobre ela */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- divs pra entender o conceito de redimensionamento -->
+    <div class="div1"></div>
+    <br> <br>
+    <div class="div2"></div>
+
+    <!-- usando variáveis -->
+    <!-- <h1>Utizando a Função var() </h1> -->
+    <div class="container">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+        <p>
+            <button>Sim</button>
+            <button>Não</button>
+        </p>
+    </div>
+
+    <img src="./imagens/imagem.png" alt="galáxia">
+
+
+</body>
+</html>
