@@ -1,0 +1,74 @@
+html {
+   font-size: 10px;
+   box-sizing: border-box;
+}
+
+body {
+    font: 2rem sans-serif;
+    background: white;
+    color: #333;
+    margin: 40px;
+}
+
+.box {
+    color: white;
+    border: 4px solid #333;
+    font-size: 2.6rem;
+    padding: 10px;
+}
+
+.box1 {
+    background: #8cd9ad;
+}
+
+.box2 {
+    background: #e37e35;
+}
+
+.box3 {
+    background: #8b008b;
+}
+
+.box4 {
+    background: #ab2121;
+}
+
+.box5 {
+    background: #0000b3;
+}
+
+.box6 {
+    background: #999;
+}
+
+.box7 {
+    background: #8b4513;
+}
+
+.box8 {
+    background: #ccc;
+}
+
+.box9 {
+    background: #80dd80;
+}
+
+.box {
+    background: #f6f4f4;
+    border-color: #090909;
+    color: #000;
+}
+
+.container { /* basicamente uma grade # < linhas e colunas */ 
+    display: grid; /* Define o container como uma grid */ 
+    grid-template-columns: 100px 50px 80px 200px; /* Define as colunas da grid */
+    grid-template-rows: 80px 100px 100px; /* Define as linhas da grid */
+    gap: 10px;
+
+    /* grid-item
+    grid-column-start: coluna que inicia a grid vertical
+    grid-column-end: coluna que finaliza a grid vertical
+    grid-row-start: linha que inicia a grid horizontal
+    grid-row-end: linha que finaliza a grid horizontal
+    */
+}
