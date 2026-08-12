@@ -1,0 +1,33 @@
+/* grupo div 1 */ 
+.container { display: flex; } /* Define o container como um flex | dispõe lado a lado */
+.box {
+	color: white;
+	border: 4px solid #333;
+	font-size: 2.6rem;
+	padding: 10px; 
+}
+
+.box1 {background: #8cd9ad;}
+.box2 {background: #e37e35;}
+.box3 {background: #8b008b;}
+.box4 {background: #ab2121;}
+
+/* grupo div 2 - direções */
+.container2 {
+    display: flex; 
+    flex-Direction: column; /* em coluna ordem normal */
+    /* flex-Direction: column-reverse; */  /* em coluna ao contrário */
+    /* flex-Direction: row; */ /* em linha ordem normal */
+    /* flex-Direction: row-reverse; */ /* em linha ao contrário */
+}
+
+/* grupo div 3 - alinhamento */
+.container3 {
+    display: flex;
+	/* flex-flow: row wrap;  *//* quebra a linha quando não couber mais elementos */
+    /* justify-Content: flex-start;  *//* todos os elementos do container alinhados a esquerda - grudados */
+    /* justify-Content: center;  */ /* centro - grudados*/
+    /* justify-Content: flex-end; */ /* todos os elementos a direita - grudados */
+    /* justify-Content: space-between; */ /* espaçamento entre os elementos */
+    justify-Content: space-around; /* espaçamento entre os elementos e nas extremidades */
+}

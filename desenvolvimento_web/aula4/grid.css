@@ -61,9 +61,11 @@ body {
 
 .container { /* basicamente uma grade # < linhas e colunas */ 
     display: grid; /* Define o container como uma grid */ 
-    grid-template-columns: 100px 50px 80px 200px; /* Define as colunas da grid */
+    grid-template-columns: 100px 50px 80px 200px; /* Define as colunas da grid (quantidade e tamnanho) */
     grid-template-rows: 80px 100px 100px; /* Define as linhas da grid */
     gap: 10px;
+}
+
 
     /* grid-item
     grid-column-start: coluna que inicia a grid vertical
@@ -71,4 +73,20 @@ body {
     grid-row-start: linha que inicia a grid horizontal
     grid-row-end: linha que finaliza a grid horizontal
     */
+
+/* usando o calc para calcular o tamanho das colunas e linhas da grid */
+.container {
+    display: grid;
+    grid-template-columns: repeat (12,7%); /* 12 colunas de 7% largura cada */
+    grid-template-rows: repeat(10, 4vh); /* 10 linhas de 4vh altura cada */
+    grid-gap: 10px calc( (100% 7% 12) / 11); /* faz um caculo para espaço entre linhas e colunas =
+                                            10px de gap entre as linhas e o restante do espaço dividido entre as colunas */
+    background-color: aquamarine;
+}
+
+/* usando o repeat para repetir as colunas e linhas da grid */
+.container {
+display: grid;
+grid-template-columns: 120 repeat (3, 100px) 400px; /* 1 coluna de 120px, repete 3 colunas de 100px e 1 coluna de 400px */
+grid-template-rows: 200px;
 }
