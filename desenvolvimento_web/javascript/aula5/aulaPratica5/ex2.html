@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Prática Exercício 2 - Sexo de uma pessoa</title>
+</head>
+<body>
+    <p>Elabore um algoritmo que leia o sexo de uma pessoa.
+    Se o sexo digitado for M ou F. Caso seja M mostrar amensagem “Sexo Masculino”. 
+    Caso seja F mostrar amensagem “Sexo Feminino”. Caso seja diferente deM/F, informar “Sexo inválido!”;
+    </p>
+    <script>
+        // Leitura do sexo digitado pelo usuário
+        // Lê o valor do input e transforma em uma string
+        var sexo = prompt("Digite o sexo (M/F):");
+        var sexo=sexo.toUpperCase()
+        
+        // Verifica se o sexo é válido
+        if (sexo == "M" || sexo == "F") {
+            if(sexo=="M"){
+                // Sexo masculino
+                alert("Sexo Masculino");
+            }
+            if(sexo=="F"){
+                // Sexo feminino
+                alert("Sexo Feminino");
+            }
+        } else {
+            // Sexo inválido
+            alert("Sexo inválido!");
+        }
+    </script>
+</body>
+</html>
