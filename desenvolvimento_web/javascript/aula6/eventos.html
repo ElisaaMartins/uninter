@@ -11,26 +11,27 @@
 
     <div id="div"> Hello World </div><br><br>
     <div id="myID"> Minha Div </div><br><br>
-    <button onClick="Mycolor()"> Change Color </button>
+    <button onClick="Mycolor()"> Change Color </button> <!-- vai mudar de cor quando o mouse passar por cima -->
     <br><br>
     
-    <button onClick="removerEvento()">Remover </button>
+    <button onClick="removerEvento()"> Remover </button> <!-- botão de remover chama a função removerEvento -->
     <br><br>
     
     <button id="myBtn"> Teste </button>
     <br><br>
-    
+
     <p id="teste"></p>
     
 
 <script>
-    var x = document.getElementById("myBtn");
-    x.addEventListener("mouseover", umFunction);
-    x.addEventListener("click",doisFunction);
-    x.addEventListener("mouseout", tresFunction);
+    // addEventListener adiciona um evento a um elemento, e removeEventListener remove o evento de um elemento
+    var x = document.getElementById("myBtn"); 
+    x.addEventListener("mouseover", umFunction); //mouseover quando o mouse passa por cima do elemento
+    x.addEventListener("click",doisFunction); // clicar
+    x.addEventListener("mouseout", tresFunction); // mouseout quando o mouse sai do elemento
     
     function umFunction() {
-      document.getElementById("teste").innerHTML += "Mouse sobre!<br>";
+      document.getElementById("teste").innerHTML += "Mouse sobre!<br>"; // faz o evento no elemento que tem o id teste
     }
     
     function doisFunction() {
@@ -43,13 +44,19 @@
 
     var elemento= document.getElementById('div');
     elemento.addEventListener('click',quatroFunction);
+    
+    // função que muda a cor do elemento quando ele é clicado
     function quatroFunction() {
        elemento.style.backgroundColor='green';
 
     }
+
+    // função que remove o evento de click do elemento
     function removerEvento() {
        elemento.removeEventListener('click', quatroFunction);
     }
+
+    // função que muda a cor do elemento com o id myID
     function Mycolor() {
         var element = document.getElementById('myID');
         element.style.backgroundColor='#900';
