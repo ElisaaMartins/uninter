@@ -1,0 +1,29 @@
+<!-- BOM - Browser Object Model
+conjunto de objetos que permitem a integração ente JS e navegdor -->
+
+<!-- CLOSE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closed - BOM</title>
+    <script>
+        var janelaAberta = window.open('','','width=400,height=400'); // abre uma nova janela com as dimensões especificadas
+        function testarJanela() {
+            if (janelaAberta.closed) {
+                alert('A janela foi fechada');
+            } else {
+                alert('A janela está aberta');
+            }
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="testarJanela()">Testar janela</button>
+</body>
+</html>
+
+
+
